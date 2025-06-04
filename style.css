@@ -1,0 +1,163 @@
+@import url(https://db.onlinewebfonts.com/c/86f81eed405e31caf488726b2b7760fd?family=Engrez+W03+Bold);
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Engrez W03 Bold", sans-serif;
+}
+
+
+.calendario{
+     display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;}
+
+.part1{
+background-color: #2981A4;
+padding: 100px;
+max-width: 800px;
+width: 100%;
+height: auto;
+height: 120vh;
+  }
+.geral{
+   display: flex;
+   
+}
+
+.escolher{
+   text-align: center;
+   margin-bottom: 100px;
+   margin-top: 50px;
+}
+
+.escolher h1{
+   margin-bottom: 20px;
+   color: white;
+
+}
+.escolher h2{
+   font-size: 25px;
+   color: white;
+}
+.day, .day-name{
+     text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.day{
+     background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10%;
+  cursor: pointer;
+
+}
+
+.day:focus{
+   background-color: #FFFFFF;
+   color: #2981A4;
+    transition: all 0.3s ease-out;
+}
+
+.part2{
+   margin: 150px;
+}
+
+.escolhas{
+   display: flex;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.escolhas div{
+   border: 2px solid #2981A4;
+   padding: 20px;
+   width: 180px;
+   text-align: center;
+   cursor: pointer;
+}
+
+.escolhas div:hover{
+   background-color: #E5EBF1;
+}
+
+.escolhas div:focus{
+   background-color: #2981A4;
+   color: white;
+   transition: all 0.3s ease-out;
+}
+
+.hora{ 
+   border: 2px solid #2981A4;
+   padding: 20px;
+   width: 180px;
+   text-align: center;
+   cursor: pointer;
+   margin-bottom: 10px;
+}
+
+.hora:hover, .hora:focus{
+   background-color: #2981A4;
+   transition: all 0.3s ease-out;
+   color: #E5EBF1;
+}
+
+
+.horario h2{
+   text-align: center;
+   margin-bottom: 20px;
+}
+.horas{   display: flex;
+   flex-wrap: wrap;
+}
+
+.solicitar{
+   padding: 20px;
+   border: 2px solid #2981A4;
+   width: 100%;
+   cursor: pointer;
+}
+
+.solicitar:hover{
+   box-shadow: 0px 0px 10px lightseagreen;
+   background-color: #2981A4;
+}
+
+   @media (max-width: 768px){
+      .geral{
+         display: block;
+      }
+
+      .escolhas div, .hora, .solicitar{
+         padding: 10px;
+      }
+
+        .part1 {
+    padding: 40px 20px;
+  }
+
+  .escolhas{
+   gap: 10px;
+   align-items: center;
+   flex-direction: column;
+  }
+  .escolhas div{
+   width: 100%;
+  }
+  .horas{
+   gap: 10px;
+  }
+  .part2 {
+    margin: 40px 20px;
+  }
+  .calendario{
+   gap: 2px;
+  }
+  .day, .day-name{
+   font-size: 12px;
+   padding: 5px;
+  }
+   }
